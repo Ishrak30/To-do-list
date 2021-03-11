@@ -1,0 +1,32 @@
+
+
+{% extends 'todo/base.html' %}
+
+
+{% block content %}
+{% load static %}
+<br><br>
+<!--
+<body>
+<div class="text-center text-light bg-secondary">
+<img src="{% static 'todo/todo.png' %}" class="max-width:100%  max-height:200px">
+<br><br>
+<h1>Wanna make a To-Do list and then procrastinate?
+<br> Then <b><u><button href="{% url 'signupuser' %}" class="text-warning bg-dark"> Sign Up! </button></u></b>
+<br> If you are signed up then <b><u><button href="{% url 'loginuser' %}" class="text-success bg-dark"> Login </button></u></b> and start working...</h1>
+<br>
+</div>
+</body> -->
+<body>
+<div class="card bg-dark text-dark text-center">
+  <img src="{% static 'todo/listtodo.jpg' %}" class="card-img" style="max-height: 600px;">
+  <div class="card-img-overlay">
+    <h1 class="card-title">Wanna make a To-Do list and then procrastinate?</h1>
+    <h2 class="card-text">Then <b><u><a href="{% url 'signupuser' %}" class="text-warning bg-dark"> Sign Up! </a></u></b></h2>
+    <h2 class="card-text">If you are signed up then <b><u><a href="{% url 'loginuser' %}" class="text-warning bg-dark"> Login </a></u></b> and start working...</h2>
+  </div>
+</div>
+</body>
+
+{% endblock %}
+
